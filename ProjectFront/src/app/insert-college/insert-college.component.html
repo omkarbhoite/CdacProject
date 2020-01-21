@@ -1,0 +1,86 @@
+<form #myForm="ngForm" (ngSubmit)="OnCollegeInsert(myForm)">
+        <legend>Add Employee</legend>
+        <br>
+    
+       
+        
+        <span>
+            <label for="accredation">Accredation</label>
+            <input ngModel type="text" id="accredation" name="accredation"  required placeholder="Enter accredation">
+        </span>
+        <br>
+        <span>
+                <label for="collageName">CollegeName</label>
+                <input ngModel type="text" id="collageName" name="collageName" required placeholder="Enter Name">
+            </span>
+            <br>
+        
+    
+        <span>
+            <label for="establishmentYear">Establishment Year</label>
+            <input ngModel type="text" id="establishmentYear" name="establishmentYear" placeholder="Enter establishmentYear">
+        </span>
+        <br>
+        <span>
+            <label for="email">College Email</label>
+            <input ngModel type="text" id="email" name="email" required placeholder="Enter email">
+        </span>
+        <br>
+        <span>
+            <label for="password">College Password</label>
+            <input ngModel type="text" id="password" name="password" required placeholder="Enter password">
+        </span>
+        <br>
+       
+    
+        <span>
+            <label for="hostelInfo">Hostel Info</label>
+            <input ngModel type="text" id="hostelInfo" name="hostelInfo" placeholder="Enter hostelInfo">
+        </span>
+        <br>
+        
+        <span>
+                <label for="ownership">Ownership</label>
+                <input ngModel type="text" id="ownership" name="ownership" required placeholder="Enter ownership">
+        </span>
+        <br>
+        <span>
+            <label for="placement">Placement obtained</label>
+            <input ngModel type="text" id="placement" name="placement" placeholder="Enter placement %">&nbsp;%
+        </span>
+        <br>
+        <span>
+            <label for="hostelFee">Hostel fee</label>
+            <input ngModel type="text" id="hostelFee" name="hostelFee" placeholder="Enter hostelFee ">
+        </span>
+        <br>
+        
+        
+        <span>
+                <label for="rating">Rating obtained</label>
+                <input ngModel type="text" id="rating" name="rating" required placeholder="Enter rating">
+        </span>
+        <br>
+        <span>
+                <label for="university">University</label>
+                <input ngModel type="text" id="university" name="university" required placeholder="Enter university" >
+            </span>
+            <br>
+        <span>
+            <label for="locationId">Location Id</label>
+            <input readonly ngModel type="text" id="locationId" name="locationId"  [(ngModel)]="locationId">
+        </span>
+        <br>
+        <br>
+        <span class="label label-warning">{{message}}</span>
+        
+    
+        <button type="submit" class="btn btn-primary">Register</button>
+        <br>
+     
+        <button type="button" class="btn btn-success" (click)="GoBackHome()">Go Back to Home</button>
+        
+        
+</form>
+
+

@@ -1,0 +1,65 @@
+<!-- <div>
+<h2>Welcome {{Student.studName}} </h2>
+</div> -->
+
+
+
+<div *ngIf="authservice.IsStudentLoggedIn()">
+        <label>Student Details</label>
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Welcome {{Studentname}}</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    <td>Student Name :</td>
+                    <td>{{StudentEmail}}</td>
+        
+                </tr>
+                <tr>
+                    <td>Student Marks  :</td>
+                    <td> :{{StudentMarks}}</td>
+        
+                </tr>
+                <tr>
+                    <td>Student Age  :</td>
+                    <td>{{StudentAge}}</td>
+        
+                </tr> 
+                <tr>
+                    <td>Location  :</td>
+                    <td>{{StudentLocation}}</td>
+            
+                </tr>
+                <tr>
+                    <td>Requset for visit College  :</td>
+                    <td>{{StudentRequest}}</td>
+            
+                </tr>
+                <tr>
+                    <td>Qualification  :</td>
+                    <td>12th</td>
+                
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <span>
+                <a class="btn btn-danger" routerLink="/deleteStudent/{{StudentId}}">Remove Student Account</a>
+            </span>
+            <br>
+            <br>
+            <span>
+            <a class="btn btn-primary" routerLink="/EditStudent/{{StudentId}}">Edit Your Detail</a>
+            </span>
+        </div>
+</div>
+<div *ngIf="!authservice.IsStudentLoggedIn()">
+        <span>
+            <button type="button"  class="btn btn-info" (click)="StudentLogin()">Student Login</button>
+        </span>
+    </div>
+<!-- <span><button type="button"  class="btn btn-primary" (click)="GoToHome()">Go Home</button></span> -->

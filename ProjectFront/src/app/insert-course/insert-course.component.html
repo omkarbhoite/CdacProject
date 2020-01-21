@@ -1,0 +1,56 @@
+<form #myForm="ngForm" (ngSubmit)="OnCourseInsert(myForm)">
+    <legend>Add Employee</legend>
+    <br>
+
+   
+    
+    <span>
+        <label for="courseName">CourseName</label>
+        <input ngModel type="text" id="courseName" name="courseName" required placeholder="Enter courseName">
+    </span>
+    <br>
+    <span>
+            <label for="cutOff">Course cutOff</label>
+            <input ngModel type="text" id="cutOff" name="cutOff" required placeholder="Enter cutOff %">&nbsp;%
+        </span>
+        <br>
+    
+
+    <span>
+        <label for="fees">Course fee</label>
+        <input ngModel type="text" id="fees" name="fees" required placeholder="Enter fees">
+    </span>
+    <br>
+   
+
+    <span>
+        <label for="intake">Course Intake</label>
+        <input ngModel type="text" id="intake" name="intake" required placeholder="Enter intake">
+    </span>
+    <br>
+    
+    <span>
+            <label for="strYear">Course Start Year</label>
+            <input ngModel type="text" id="strYear" name="strYear" placeholder="Enter strYear">
+    </span>
+    <br>
+    <span>
+   
+        <label for="collegeId">College ID</label>
+        <input readonly ngModel type="text" id="collegeId" name="collegeId"  [(ngModel)]="collegeId">
+    </span>
+    <br>
+    <br>
+    <span class="label label-warning">{{message}}</span>
+    
+
+    <button type="submit" class="btn btn-primary">Register</button>
+    <br>
+ 
+    <!-- <button type="button" class="btn btn-success" (click)="GoBackHome()">Go Back to Home</button> -->
+    
+    
+</form>
+
+
+

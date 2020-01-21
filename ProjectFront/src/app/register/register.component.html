@@ -1,0 +1,65 @@
+<form #myForm="ngForm" (ngSubmit)="OnAddCallMe(myForm)">
+        <legend>Add Employee</legend>
+    
+        <span>
+            <label for="studName">Student Name</label>
+            <input ngModel type="text"  id="studName" name="studName" #StdName =ngModel required placeholder="Enter Name">&nbsp;*
+            <div class="alert alert-danger" *ngIf="StdName.touched && !StdName.valid">Name is required</div> 
+        </span>
+        <br>
+        <br>
+        <span>
+            <label for="age">Age</label>
+            <input ngModel type="text"  id="age" name="age" #StdAge =ngModel required placeholder="Enter Age">&nbsp;*
+            <div class="alert alert-danger" *ngIf="StdAge.touched && !StdAge.valid">Age is required</div>
+        </span> 
+        <br>
+        <br>
+    
+        <span>
+            <label for="studEmail">Email</label>
+            <input ngModel type="text"  id="studEmail" #StdEmail =ngModel required name="studEmail" placeholder="Enter Email">&nbsp;*
+            <div class="alert alert-danger" *ngIf="StdEmail.touched && !StdEmail.valid">Email is required</div>
+        </span>
+        <br>
+        <br>
+    
+        <span>
+            <label for="studPassword">Password</label>
+            <input ngModel type="text"  id="studPassword"  name="studPassword" #StdPass =ngModel required placeholder="Enter Password">&nbsp;*
+            <div class="alert alert-danger" *ngIf="StdPass.touched && !StdPass.valid">Password is required</div>
+        </span>
+        <br>
+        <br>
+        <span>
+                <label for="studLocation">Location</label>
+                <input ngModel type="text"  id="studLocation" name="studLocation" placeholder="Enter your Location">
+                
+        </span>
+        <br>
+        <br>
+        <span>
+                <label for="marks">12th Marks</label>
+                <input ngModel type="text"  id="marks" name="marks" #StdMarks =ngModel  required placeholder="Enter marks %">&nbsp;% &nbsp;*
+                <div class="alert alert-danger" *ngIf="StdMarks.touched && !StdMarks.valid">Marks Are required</div>
+        </span>
+        <br>
+        <br>
+        
+    
+        <button type="submit" class="btn btn-primary">Register</button>
+        <br>
+
+     
+        <!-- <button type="button" class="btn btn-success" (click)="GoBackHome()">Go Back to Home</button> -->
+        <br>
+        
+</form>
+<br>
+<span>
+    <button type="button"  class="btn btn-info" (click)="StudentDetails()">Already registed</button>
+</span>
+<br>
+<br>
+<h4>{{message}}</h4>
+

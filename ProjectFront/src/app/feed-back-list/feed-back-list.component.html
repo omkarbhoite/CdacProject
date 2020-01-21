@@ -1,0 +1,12 @@
+
+<div *ngIf="authservice.IsLoggedIn()" style="text-align: center">
+<ul class="list-group">
+        <li class="list-group-item list-group-item-success"><h4>Web App rating : {{WebApprating}}</h4></li>
+        <li class="list-group-item list-group-item-info"><h4>Location rating : {{LocationRating}}</h4></li>
+        <li class="list-group-item list-group-item-warning"><h4>Information rating : {{InfoRating}}</h4></li>
+</ul>
+
+<span>
+     <button type="button"  class="btn btn-danger" (click)="Delete()">Delete All FeedBack</button>
+</span>
+</div>

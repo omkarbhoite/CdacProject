@@ -1,0 +1,24 @@
+
+<form #validationForm="ngForm" (ngSubmit)="Checkdetails(validationForm)">
+        <legend>Student Login</legend>
+    
+        <span>
+            <label for="studEmail">Student Email</label>
+            <input ngModel type="text" id="studEmail" name="studEmail" placeholder="Enter UserName/email">
+        </span>
+        <br>
+    
+        <span>
+            <label for="studPassword">Student Password</label>
+            <input ngModel type="password" id="studPassword"  name="studPassword" placeholder="Enter password ">
+        </span>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <br>
+        <br>
+        <a routerLink="/forgotPassword">Forgot password</a>
+        <br>
+        <br>
+        <h4>{{message}}</h4>
+</form>

@@ -1,0 +1,49 @@
+<form #myForm="ngForm" (ngSubmit)="OnStudentUpdate(myForm)">
+        <legend>Edit Student Detail</legend>
+        <br>
+        <br>
+    
+        
+        <span>
+                <label for="studName">Student Name</label>
+                <input ngModel type="text" class="form-control" id="studName" name="studName" placeholder="Enter studName"  [(ngModel)]="Studentname">
+            </span>
+            <br>
+            <span>
+                    <label for="studEmail">Student Email</label>
+                    <input ngModel type="text" class="form-control" id="studEmail" name="studEmail" required placeholder="Enter Name" [(ngModel)]="StudentEmail">&nbsp;*
+                </span>
+                <br>
+            
+        
+            <span>
+                <label for="studPassword">Student Password</label>
+                <input ngModel type="text" class="form-control" id="studPassword" name="studPassword"  required placeholder="Enter Email" [(ngModel)]="Student.studPassword">&nbsp;*
+            </span>
+            <br>
+           
+        
+            <span>
+                <label for="age">Age</label>
+                <input ngModel type="text" class="form-control" id="age" name="age" placeholder="Enter age"  required [(ngModel)]="StudentAge">&nbsp;*
+            </span>
+            <br>
+            
+            <span>
+                    <label for="marks">Student 12th Marks</label>
+                    <input ngModel type="text" class="form-control" id="marks" name="marks" placeholder="Enter marks" required [(ngModel)]="StudentMarks">&nbsp;*
+            </span>
+            <br>
+            
+            <span>
+                    <label for="studLocation">Student Location</label>
+                    <input ngModel type="text" class="form-control" id="studLocation" name="studLocation" placeholder="Enter studLocation" [(ngModel)]="StudentLocation">
+            </span>
+            <br>
+        <button type="submit" class="btn btn-primary">Update</button>
+        
+       
+        
+    
+</form>
+

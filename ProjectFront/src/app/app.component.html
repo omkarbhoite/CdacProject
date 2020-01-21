@@ -1,0 +1,73 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation" >
+    <a class="navbar-brand" href="#">Title</a>
+    <ul class="nav navbar-nav">
+        <li class="active">
+            <a routerLink="/home">Home</a>
+        </li>
+        <li class="active">
+            <a routerLink="/feedback">Feedback</a>
+        </li>
+       
+        <li *ngIf="!authservice.IsStudentLoggedIn()">
+            <span>
+                <button type="button"  class="btn btn-info" (click)="StudentLogin()">Student Login</button>
+            </span>
+        </li>
+        <li *ngIf="authservice.IsStudentLoggedIn()">
+            <span>
+                <button type="button"  class="btn btn-info" (click)="StudentLogOut()">Student Logout</button>
+            </span>
+        </li>
+        <li *ngIf="authservice.IsStudentLoggedIn()">
+            <span>
+                <button type="button"  class="btn btn-info" (click)="StudentDetails()">Student Account</button>
+            </span>
+        </li>
+        <li>
+            <span *ngIf="authservice.IsLoggedIn()">
+                       
+                <a class="btn btn-primary" routerLink="/StudentList">See Students Accounts</a>
+        
+            </span>
+        </li>
+        <li *ngIf="!authservice.IsStudentLoggedIn()">
+            <a class="btn btn-success" routerLink="/register">Sign Up</a>
+
+        </li>
+        <!-- <li  class="active" *ngIf="!authservice.IsCollegeLoggedIn()">
+            <a routerLink="/collegeLogin">College Login</a>
+                        
+        </li>
+        <li  class="active" *ngIf="authservice.IsCollegeLoggedIn()">
+                
+            <button type="button"  class="btn btn-info" (click)="CollegeLogOut()">College Logout</button>
+                  
+                            
+         </li> -->
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="!authservice.IsBothLoggedIn()" style="justify-content: right">
+            <button type="button"  class="btn btn-success" (click)="GoToLogin()">Login</button>
+                
+        </li>
+        <li *ngIf="authservice.IsBothLoggedIn()" >
+            <button type="button"  class="btn btn-primary" (click)="GoToLogOut()">Logout</button>
+                
+        </li>
+    </ul>
+    <ul  class="nav navbar-nav">
+        <li  class="active" *ngIf="authservice.IsLoggedIn()">
+            <a routerLink="/feedBackList">Feedback Obtained</a>
+                    
+        </li>
+        <li  class="active" *ngIf="authservice.IsCollegeLoggedIn()">
+            <a routerLink="/requestList">Request List</a>
+                    
+        </li>
+    </ul>
+    
+    
+</nav>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,111 @@
+
+insert into Location(pincode,region) values(411005,'Pune');
+
+insert into Location(pincode,region) values(416116,'Kolhapur');
+
+insert into Location(pincode,region) value(415002,'Satara');
+
+
+
+insert into Colleges values(default,'NBA AICTE',null,'College of Engineering Pune','COLLEGE','coep@gmail',1854,20000,'Boys/Girls Hostel','Government-autonomous','coep@123',50,4.9,'Pune University',1);
+insert into Colleges values(default,'NBA AICTE',null,'Progressive Education Societys Modern College Of Engineering','COLLEGE','pesm@gmail',1999,22000,'Boys Hostel','Private','pesm@123',59,4.1,'Pune University',1);
+
+insert into Colleges values(default,'AICTE NAAC',null,'Flora Institute Of Technology','COLLEGE','fit@gmail',2011,35000,'Boys Hostel','Private','fit@123',45,3.1,'Pune University',1);
+
+insert into Colleges values(default,'AICTE NAAC',null,'Kolhapur Institute Of Technology','COLLEGE','kite@gmail',1993,45000,'Boys/Girls Hostel','Private-Autonomous','kite@123',47,4.5,'Chatrapati Shivaji Maharaj University',2);
+
+insert into Colleges values(default,'NBA',null,'Sanjay Ghodawat Institute Of Technology','COLLEGE','sgi@gmail',2009,18000,'Girls Hostel','Private-Autonomous','sgi@123',48,3.2,'Chatrapati Shivaji Maharaj University',2);
+
+insert into Colleges values(default,'NAAC NBA',null,'Dr. D.Y.Patil College Of Engineering','COLLEGE','dyp@gmail',1984,28000,'Girls Hostel','Private-Autonomous','dyp@123',62,3.9,'Chatrapati Shivaji Maharaj University',2);
+
+insert into Colleges values(default,'AICTE',null,'Karmaveer Bhaurao Patil College Of Engineering','COLLEGE','kbp@gmail',1983,78000,'Boys/Girls Hostel','Private','kbp@123',73,3.5,'Babasaheb Ambedkar Technological University',3);
+
+insert into Colleges values(default,'NAAC',null,'Arving Gavali College Of Engineering','COLLEGE','agce@gmail',2006,0.0,'No Hostel','Private','agce@123',68,2.5,'Babasaheb Ambedkar Technological University',3);
+
+
+insert into Colleges values(default,'NBA',null,'Yashoda College Of Engineering','COLLEGE','yce@gmail',2009,0.0,'No Hostel','Government-autonomous','yce@123',79,1.9,'Babasaheb Ambedkar Technological University',3);
+
+
+
+insert into Courses values(default,'Electrical Enginnering',75.5,90000,60,1920,1);
+
+
+insert into Courses values(default,'Mechanical Enginnering',80.5,90000,60,1920,1);
+
+
+insert into Courses values(default,'Electronics & Telecommunication Enginnering',70.5,90000,60,1920,1);
+
+
+insert into Courses values(default,'Computer Science Enginnering',87.5,85000,120,1930,1);
+
+
+insert into Courses values(default,'Mechanical Enginnering',80.5,92000,120,1999,2);
+
+
+insert into Courses values(default,'Electrical Enginnering',77.5,90000,120,1999,2);
+
+
+insert into Courses values(default,'Electronics & Telecommunication Enginnering',72.5,92000,120,2000,2);
+
+
+insert into Courses values(default,'Mechanical Enginnering',79.5,95000,120,2011,3);
+
+
+insert into Courses values(default,'Computer Science Enginnering',87.5,95000,120,2011,3);
+
+
+insert into Courses values(default,'Electrical Enginnering',77.5,87000,120,1983,4);
+insert into Courses values(default,'Mechanical Enginnering',76.5,89000,60,1983,4);
+
+
+insert into Courses values(default,'Electronics & Telecommunication Enginnering',70.5,98000,60,2009,5);
+insert into Courses values(default,'Production Enginnering',69.5,88000,120,2009,5);
+
+
+insert into Courses values(default,'Computer Science Enginnering',74.5,82000,120,1984,6);
+insert into Courses values(default,'Chemical enginnering Enginnering',74.5,82000,120,1984,6);
+
+insert into Courses values(default,'Computer Science Enginnering',73.5,84000,120,1983,7);
+insert into Courses values(default,'Civil Enginnering',88.5,84000,180,1983,7);
+
+insert into Courses values(default,'Computer Science Enginnering',73.5,84000,120,1983,8);
+insert into Courses values(default,'Electrical Enginnering',78.5,84000,120,1983,8);
+insert into Courses values(default,'Electronics & Telecommunication Enginnering',73.5,82000,60,1983,9);
+insert into Courses values(default,'Mechanical Enginnering',71.5,84000,120,1983,9);
+
+
+
+insert into Students values(default,18,0,60.5,'NOREQUEST','omkar@gmail','satara','Omkar Bhoite','omkar@123');
+insert into Students values(default,19,0,65.5,'NOREQUEST','vivek@gmail','Usmanabad','Vivek Patil','vivek@123');
+insert into Students values(default,19,0,65.5,'NOREQUEST','yash@gmail','Sangvi','Yash Chavan','Yash@123');
+insert into Students values(default,18,0,65.5,'NOREQUEST','sanket@gmail','Kolhapur','Sanket Benade','sanket@123');
+insert into Students values(default,18,0,74.5,'NOREQUEST','shantanu@gmail','Sangli','Shantanu Mohite','shantanu@123');
+insert into Students values(default,19,0,82.5,'NOREQUEST','nikhil@gmail','Wai','Nikhil Kadam','nikhil@123');
+insert into Students values(default,20,0,74.5,'NOREQUEST','pruthvigmail','Pune','Pruthviraj Mohite','pruthvi@123');
+insert into Students values(default,20,0,76.8,'NOREQUEST','ravi@gmail','Beed','Raviraj Jadhav','ravi@123');
+insert into Students values(default,20,0,68.9,'NOREQUEST','rushikesh@gmail','Mumbai','Rushikesh Sakharkar','rushi@123');
+insert into Students values(default,21,0,78.9,'NOREQUEST','kuldeep@gmail','Islampur','Kulldeep Patil','kuldeep@123');
+insert into Students values(default,22,0,63.9,'NOREQUEST','vaibhav@gmail','Peth','Vaibhav Mali','vaibhav@123');
+insert into Students values(default,23,0,55.9,'NOREQUEST','shardul@gmail','Nashik','Shardul Jadhav','shardul@123');
+insert into Students values(default,17,0,50.9,'NOREQUEST','saurabh@gmail','Nagpur','Saurabh Mane','saurabh@123');
+insert into Students values(default,19,0,42.9,'NOREQUEST','kartik@gmail','Akola','Kartik Kashid','kartik@123');
+
+
+insert into UserRole values(default,'swapnil@gmail','swapnil@1234','ADMIN','Swapnil Kadam');
+insert into UserRole values(default,'ashish@gmail','ashish@123','DATAOPERATOR','Ashish Mane');
+
+insert into FeedBack values(default,4,2,3,1);
+insert into FeedBack values(default,5,3,4,2);
+insert into FeedBack values(default,5,3,4,3);
+insert into FeedBack values(default,4,2,2,4);
+insert into FeedBack values(default,5,3,3,5);
+
+
+
+
+
+
+
+
+
+

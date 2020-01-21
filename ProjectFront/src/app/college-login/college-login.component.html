@@ -1,0 +1,19 @@
+<form #validationForm="ngForm" (ngSubmit)="CheckCollegedetails(validationForm)">
+        <legend>College Login</legend>
+    
+        <span>
+            <label for="collegeEmail">College Email</label>
+            <input ngModel type="text" id="collegeEmail" name="collegeEmail" placeholder="Enter UserName/email">
+        </span>
+        <br>
+    
+        <span>
+            <label for="collegePassword">College Password</label>
+            <input ngModel type="password" id="collegePassword"  name="collegePassword" placeholder="Enter password ">
+        </span>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <br>
+        <h4>{{message}}</h4>
+</form>

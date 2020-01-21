@@ -1,0 +1,45 @@
+<form #myForm="ngForm" (ngSubmit)="OnCourseUpdate(myForm)">
+    <legend>Update Course</legend>
+    <br>
+    <br>
+
+    
+    <span>
+            <label for="courseName">Course Name</label>
+            <input readonly ngModel type="text" class="form-control" id="courseName" name="courseName" placeholder="Enter courseName"  [(ngModel)]="CourseName">
+        </span>
+        <br>
+        <span>
+                <label for="cutOff">CutOff</label>
+                <input ngModel type="text" class="form-control" id="cutOff" name="cutOff" placeholder="Enter cutOff" [(ngModel)]="CutOff">
+        </span>
+         <br>
+        
+    
+        <span>
+            <label for="fees">Course Fee</label>
+            <input ngModel type="text" class="form-control" id="fees" name="fees" placeholder="Enter fees" [(ngModel)]="Fees">
+        </span>
+        <br>
+       
+    
+        <span>
+            <label for="intake">Course Intake</label>
+            <input ngModel type="text" class="form-control" id="intake" name="intake" placeholder="Enter intake" [(ngModel)]="Intake">
+        </span>
+        <br>
+        
+        <span>
+                <label for="strYear">Course Starting Year</label>
+                <input readonly ngModel type="text" class="form-control" id="strYear" name="strYear" placeholder="Enter your strYear" [(ngModel)]="StrYear">
+        </span>
+        <br>
+       
+    <br>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+
+    
+
+</form>
+

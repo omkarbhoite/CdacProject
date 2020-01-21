@@ -1,0 +1,76 @@
+
+<div *ngIf="authservice.IsStudentLoggedIn()">
+    <h3>Rate Us</h3>
+    <form #myForm="ngForm" (ngSubmit)="OnFeedbackInsert(myForm)">
+        <h4>Is this app Good ?</h4>
+            <br>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="webAppRating" id="webAppRating" value="5" checked>Excellent
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="webAppRating" id="webAppRating" value="4">Good
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="webAppRating" id="webAppRating" value="3">Average
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="webAppRating" id="webAppRating" value="2">Below Average
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="webAppRating"  id="webAppRating" value="1">Unsatisfactory
+            </label>
+            <br>
+            <br>
+        <h4>Is Information given useful ?</h4>
+            <br>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="infoRating" id="infoRating" value="5" checked>Excellent
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="infoRating" id="infoRating" value="4">Good
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="infoRating" id="infoRating" value="3">Average
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="infoRating" id="infoRating" value="2">Below Average
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="infoRating"  id="infoRating" value="1">Unsatisfactory
+            </label>
+            <br>
+            <br>
+        <h4>Is prefered location is good ?</h4>
+            <br>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="locationRating" id="locationRating" value="5" checked>Excellent
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="locationRating" id="locationRating" value="4">Good
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="locationRating" id="locationRating" value="3">Average
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="locationRating" id="locationRating" value="2">Below Average
+            </label>
+            <label class="radio-inline">
+                <input ngModel type="radio" name="locationRating"  id="locationRating" value="1">Unsatisfactory
+            </label>
+            <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        
+        <!-- <button type="button" class="btn btn-success" (click)="GoBackHome()">Go Back to Home</button> -->
+        
+        
+    </form>
+   
+        
+        
+</div>
+<span *ngIf="!authservice.IsStudentLoggedIn()">
+       
+        <button type="button"  class="btn btn-info" (click)="StudentDetails()">Please Login</button>
+      
+</span>

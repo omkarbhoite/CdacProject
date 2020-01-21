@@ -1,0 +1,35 @@
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student Email</th>
+                    <th>Age  </th>
+                    <th>12th Marks</th>
+                    <th>Location</th>
+                    <th>RequestStatus</th>
+                </tr>
+        
+            </thead>
+            
+            
+            <tbody>
+                <tr *ngFor="let s of StudentList">
+                    <td>{{s.studName}}</td>
+                    <td>{{s.studEmail}}</td>
+                    <td>{{s.age}}</td>
+                    <td>{{s.marks}}</td>
+                    <td>{{s.studLocation}}</td>
+                    <td>{{s.requeststatus}}</td>
+                
+                    <td><a class="btn btn-success" routerLink="/acceptRequest/{{s.studentId}}">Accept</a></td>
+                    <td><a class="btn btn-danger" routerLink="/rejectRequest/{{s.studentId}}">Reject</a>
+                    </td>
+                </tr>
+            </tbody>
+            
+        
+        
+        </table>
+
+</div>

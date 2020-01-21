@@ -1,0 +1,76 @@
+<form #myForm="ngForm" (ngSubmit)="OnCollegeUpdate(myForm)">
+        <legend>Edit College Detail</legend>
+        <br>
+        <br>
+    
+        
+        <span>
+                <label for="accredation">Accredation</label>
+                <input ngModel type="text" class="form-control" id="accredation" name="accredation" placeholder="Enter accredation"  [(ngModel)]="Accredation">
+            </span>
+            <br>
+            <span>
+                    <label for="collageName">CollegeName</label>
+                    <input readonly ngModel type="text" class="form-control" id="collageName" name="collageName" placeholder="Enter Name" [(ngModel)]="CollageName">
+                </span>
+                <br>
+            <span>
+                <label for="email">College Email</label>
+                <input readonly ngModel type="text" class="form-control" id="email" name="email" placeholder="Enter email" [(ngModel)]="CollegeEmail">
+            </span>
+            <br>
+            <span>
+                <label for="password">College Password</label>
+                <input readonly ngModel type="text" class="form-control" id="password" name="password" placeholder="Enter password" [(ngModel)]="CollegePassword">
+            </span>
+            <br>
+            
+        
+            <span>
+                <label for="establishmentYear">Establishment Year</label>
+                <input readonly ngModel type="text" class="form-control" id="establishmentYear" name="establishmentYear" placeholder="Enter Email" [(ngModel)]="EstablishmentYear">
+            </span>
+            <br>
+            <span>
+                <label for="placement">Placement record</label>
+                <input ngModel type="text" class="form-control" id="placement" name="placement" placeholder="Enter your placement" [(ngModel)]="Placement">
+            </span>
+            <br>
+            <span>
+                <label for="ownership">OwnerShip</label>
+                <input ngModel type="text" class="form-control" id="ownership" name="ownership" placeholder="Enter ownership" [(ngModel)]="Ownership">
+            </span>
+            <br>
+           
+        
+            <span>
+                <label for="hostelInfo">Hostel Info</label>
+                <input ngModel type="text" class="form-control" id="hostelInfo" name="hostelInfo" placeholder="Enter hostelInfo" [(ngModel)]="HostelInfo">
+            </span>
+            <br>
+            <span>
+                <label for="hostelFee">Hostel fee</label>
+                <input ngModel type="text" class="form-control" id="hostelFee" name="hostelFee" placeholder="Enter hostelFee" [(ngModel)]="HostelFee">
+                </span>
+                <br>
+            
+            
+            
+            <span>
+                    <label for="rating">Rating obtained</label>
+                    <input ngModel type="text" class="form-control" id="rating" name="rating" placeholder="Enter rating" [(ngModel)]="Rating">
+            </span>
+            <br>
+            <span>
+                    <label for="university">University</label>
+                    <input ngModel type="text" class="form-control" id="university" name="university" placeholder="Enter University" [(ngModel)]="University" >
+                </span>
+                <br>
+        <br>
+    
+        <button type="submit" class="btn btn-primary">Update</button>
+        
+       
+        
+    
+</form>
